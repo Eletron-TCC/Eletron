@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2? family= Anek+Telugu:wght@300 & display=swap');
+
+/*header*/
+body {
+  background-color: black;
+	margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Anek Telugu', sans-serif;
+  
+}
+
+.topo-site {
+background-color: black;
+display: flex;
+height: 13%;
+}
+
+.logo img{
+	width: 50%;
+  padding: 50px;
+  height: 25%;
+}
+
+  .pesquisa{
+    padding-right: 19%;
+    width: 33%;
+    margin: 0 auto;
+  }
+  
+  input#pesquisa{
+    margin-top: 50px;
+    width: 100%;
+    height: 33%;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    border-radius: 20px;
+    display: block;
+   }
+  
+  .lupa{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -62px;
+    right: -45px;
+  }
+
+  .iconelogin img{
+width: 25px;
+position: absolute;
+height: 25px;
+left: 85%;
+top: 60px;
+  }
+ 
+
+  .iconecarrinho img{
+    width: 25px;
+position: absolute;
+height: 25px;
+left:90%;
+top: 60px;
+  }
+
+  .iconemais img{
+    width: 25px;
+    position: absolute;
+    height: 25px;
+    left: 95%;
+    top: 60px;
+    }
+    /*Fecha header*/
+    
+
+
+
+    /*Barra de Pesquisa*/
+nav{
+  background-color: white;
+  text-align: center;
+}
+nav ul{
+  display: inline-flex;
+  list-style: none;
+}
+
+nav ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+   a:visited{
+    color: black;
+  }
+
+  .sub-menu-1{
+    display: none;
+  }
+
+  nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: -38px;
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  nav ul li:hover .sub-menu-1 ul{
+    display: block;
+  }
+
+  nav ul li:hover .sub-menu-1 ul li{
+width: 100px;
+text-align: center;
+border-radius: 10px;
+transition: 0,7s;
+  }
+
+  nav ul li:hover .sub-menu-1 ul li:hover{
+    background-color: gray;
+  }
+  
+/*Fecha barra de pesquisa*/
+
+  /*Corpo index*/
+.content{
+  background-color: white;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform:  translate(-50%, -50%);
+  z-index: 1;
+  
+
+}
+
+.carrossel-iphone{
+height: 570px;
+}
+
+
+.navegation{
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translate(-50%);
+display: flex;
+
+}
+
+.bar{
+width: 70px;
+height: 18px;
+border: 2px solid #ffff;
+margin: 6px;
+border-radius: 5px;
+cursor: pointer;
+transition: .4s;
+
+
+}
+
+.bar:hover{
+
+background-color: #ffff;
+}
+
+#slide1, #slide2, #slide3, #slide4{
+display: none;
+
+}
+
+.slides{
+display: flex;
+width: 500%;
+height: 100%;
+}
+
+.slide{
+width: 20%;
+transition: .6s;
+}
+
+.slide img{
+width: 100%;
+height: 100%;
+}
+
+#slide1:checked ~ .s1{
+margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+margin-left: -80%;
+}
+
+.inf{
+  color:white ;
+  display: flex;
+  margin-top: 2%;
+  margin-right: 7%;
+  margin-left: 7%;
+  padding: 20px;
+  border: white 2px solid;
+  border-radius: 15px;
+}
+
+.inf div{
+
+  display: flex;
+  margin-left: 12%;
+  align-items: center;
+}
+
+.section-dois-container{
+  width: 1030px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 21px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	font-size: 20px;
+	border-radius: 15px;
+  margin: auto;
+}
+
+.destaques{
+  margin-bottom: 150px;
+  color: white;
+  font-size: 30px;
+}
+
+.destaques img{
+  border-radius: 20px;
+}
+
+.destaque1{
+  display:flex ;
+  justify-content: space-between;
+}
+
+.destaque2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.imagens-lancamentos{
+  display: flex;
+  justify-content: center;
+}
+.imagens-lancamentos img{
+  height: 200px;
+  width: 200px;
+}
+
+.conteudo-lancamento{
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: white;
+  height: 100%;
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+
+.lancamentos h1{
+  color: white;
+  margin-left: -120px;
+}
+/*fecha corpo index */
+
+
+/*corpo iphone*/
+h1{
+  font-size: 50px;
+  color: white
+}
+.modelos-iphone{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.navegacao-iphone{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.navegacao-iphone img{
+  height: 200px;
+  width: 200px;
+}
+.navegacao-iphone h5{
+  margin-top: 0;
+  text-align: center;
+}
+
+
+
+
+/*Corpo Sobre nós*/
+.corpo-sobrenos{
+  margin: 25px 25px 25px 25px;
+  letter-spacing: 2px;
+  font-size: large;
+}
+.corpo-sobrenos p{
+margin-top: 50px;
+}
+
+.corpo-sobrenos img{
+  height: 520px;
+}
+/*fecha sobre nos*/
+
+
+
+
+
+/*Rodapé */
+.rodape{
+background-color: rgb(94, 94, 94);
+height: 100%;
+padding: 5% 20px 20px 10%;
+
+}
+
+
+.conteudo-rodape{
+  color: black;
+  display: flex;
+  
+}
+
+.comprar-rodape{
+  margin-right: 20%;
+  
+}
+
+.redes-rodape{
+  margin-right: 20%;
+}
+
+.loc-escrita-rodape{
+  display: flex;
+  align-items: center;
+
+}
+
+.segundo-rodape{
+  border-top: 1px solid black;
+  margin-right: 15%;
+  padding-top: 70px;
+  margin-top: 70px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.segundo-rodape img{
+  width: 200px;
+  height: 100%;
+  margin-right: 10%;
+color: black;
+}
+
+.rodape a:visited {
+  color: black;
+}
+
+/*fecha rodape*/
+
+
+
