@@ -1,172 +1,51 @@
-
+@import url('https://fonts.googleapis.com/css2? family= Anek+Telugu:wght@300 & display=swap');
 body {
     background-color :black;
-    
-    }
-
-    .imgseta{
-      width: 50px;
-      height: 50px;
-    }
-
-    .carrinho{
-        position: absolute;
-width: 149px;
-height: 121.47px;
-left: 884px;
-top: 170px;
-
 
     }
-    .logo1{
-        position: absolute;
-        left: 42%;
-        right: 42%;
-        top: 34.16%;
-        bottom: 59.7%;
-        
-    }
-
-
-
-    .logo2{
-        position: absolute;
-        left: 43%;
-        right: 50%;
-        top: 10%;
-        bottom: 59.7%;
-        
-    }
-
-
 
 #login {
-    position: absolute;
-    top: 120px;
-    left: 800px; 
-
-    display: flex;
-
-    align-items: center;
-
-
-    height: 100vh;
-
-
+ background-color: pink;
+display: flex;
+justify-content: center;
+text-align: center;
 
 }
 
 .card-content-area  {
-
-
-    display: flex;
-
-    flex-direction: column;
-
-    padding:15px 0;
-    
-
+display: flex;
+flex-direction: column;
+padding:15px 0;
+align-items: center;
 }
 
 .card-content-area input {
-
-   width: 350px;
-
-    height: 40px;
-
-    padding: 10px;
-
-     border: 10px ;
-
-    border-radius: 5px  ;
-
-    color: #2148C0;
-
-    margin-top: 25px;
-
+width: 350px;
+height: 43px;
+padding: 10px;
+border: 2px solid ;
+margin-top: 25px;
 
 }
 
 
 .card-footer {
-
     display: flex;
-
     flex-direction: column;
-
-
-    
 }
 
 
-.card-footer .submit{
 
-
-    width: 100%;
-
-    height: 45px;
-
-
-    margin: 10px 0;
-
-    text-align: center;
-
-   color: #2148C0;
-
-     border: 10px ;
-
-    border-radius: 5px  ;
+.card-footer input .botaocad{
+width: 70%;
+height: 45px;
 
 }
 
-
-.card-footer .submit:hover {
-    background-color: #000000; 
-
-transition: 0.5s;
-
-opacity: 0.7;
+.card-footer .botaocad{
+width: 100%;
+height: 45px;
 
 }
 
-.card-footer a {
-
-    text-align: center;
-
-    font-size: 12px;
-
-    color: #fff;
-
-    text-decoration: none;
-
-
-
-}
-
-#login .card-content-area .card-footer input .botaocad{
-
-    width: 100%;
-
-    height: 45px;
-
-}
-
-#login .card-content-area .card-footer .botaocad{
-
-    width: 100%;
-
-    height: 45px;
-
-    
-
-}
-
-.card-footer .botaocad:hover { 
-    background-color: #000000; 
-
-transition: 0.5s;
-
-opacity: 0.7;
-
-}
 
