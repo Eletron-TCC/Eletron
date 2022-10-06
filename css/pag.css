@@ -33,32 +33,32 @@ top: 60px;
  
 
   .iconecarrinho img{
-    width: 25px;
+    width: 28px;
 position: absolute;
-height: 25px;
+height: 28px;
 left:95%;
 top: 60px;
   }
 
     /*Barra de Pesquisa*/
-nav{
+header nav{
   background-color: black;
   text-align: center;
 }
-nav ul{
+header nav ul{
   display: inline-flex;
   list-style: none;
   color: white;
   margin-top: 4.5%;
 }
 
-nav ul li{
+header nav ul li{
   width: 90px;
   margin: 10px;
   padding: 10px;
   color: white;
 }
-nav ul li a{
+header nav ul li a{
   text-decoration: none;
   color: white;
 }
@@ -368,53 +368,42 @@ margin-top: 50px;
 
 /*Rodapé */
 .rodape{
-background-color: rgb(94, 94, 94);
-height: 100%;
-padding: 5% 20px 20px 10%;
+background-color: black;
+max-height: 100%;
+width: 100%;
+color: white;
+}
+
+.primeira-parte-footer{
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+ margin: 0px 12% 0px 12%;
+ padding: 3%;
 
 }
 
-
-.conteudo-rodape{
-  color: black;
-  display: flex;
+.primeira-parte-footer img{
+  height: 25%;
+  width: 20%;
   
 }
 
-.comprar-rodape{
-  margin-right: 20%;
-  
+.primeira-parte-footer p{
+  font-size: 13px;
+
 }
 
-.redes-rodape{
-  margin-right: 20%;
-}
-
-.loc-escrita-rodape{
+.segunda-parte-footer{
   display: flex;
-  align-items: center;
-
-}
-
-.segundo-rodape{
-  border-top: 1px solid black;
-  margin-right: 15%;
-  padding-top: 70px;
-  margin-top: 70px;
-  color: black;
-  display: flex;
-  align-items: center;
-}
-
-.segundo-rodape img{
-  width: 200px;
-  height: 100%;
-  margin-right: 10%;
-color: black;
-}
-
-.rodape a:visited {
-  color: black;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  align-items:center;
+  background-color:#1C1C1C;
+  color:white;
+  border-top: 2px solid white;
+  padding: 1%;
 }
 
 /*fecha rodape*/
