@@ -2,7 +2,7 @@
 
 /*header*/
 body {
-  background-color: white;
+  background-color: lightgray;
 	margin: 0;
   padding: 0;
   height: 100vh;
@@ -362,9 +362,40 @@ margin-top: 50px;
 }
 /*fecha sobre nos*/
 
+/*Pags Item*/
+.todos-produt{
+   margin: 1% 0px 5% 0px;
+   
+}
+.todos-produt h1{
+  margin-left: 20%;
+  color: black;
+}
+#container-item{
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+ 
+  margin: 2%;
+  grid-auto-rows: 420px 420px;
+  grid-template-columns: repeat(4, 300px);
+  grid-gap: 20px;
+}
 
 
+.produto img{
+  width: 90%;
+  margin-bottom: 2%;
 
+}
+
+.produto{
+  background-color: white;
+  padding:2%;
+}
+
+/*fecha pags item*/
 
 /*Rodapé */
 .rodape{
