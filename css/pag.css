@@ -7,7 +7,11 @@ body {
   padding: 0;
   height: 100vh;
   font-family: 'Anek Telugu', sans-serif;
+
   
+}
+a{
+  text-decoration: none;
 }
 
 .topo-site {
@@ -58,6 +62,7 @@ header nav ul li{
   padding: 10px;
   color: white;
 }
+
 header nav ul li a{
   text-decoration: none;
   color: white;
@@ -239,41 +244,16 @@ margin-left: -80%;
 .destaque2{
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-.imagens-lancamentos{
-  display: flex;
-  justify-content: center;
-}
-.imagens-lancamentos img{
-  height: 200px;
-  width: 200px;
-}
-
-.conteudo-lancamento{
-  margin-left: 3%;
-  margin-right: 3%;
-  background-color: white;
-  height: 100%;
-  max-width: 250px;
-  padding: 10px;
-  border-radius: 15px;
-  margin-bottom: 5%;
-  border: 2px solid black;
-}
-
-.h1-lancamentos h1{
-  color: black;
-  margin-left: -120px;
-}
 /*fecha corpo index */
 
 
 /*corpo iphone*/
 h1{
   font-size: 50px;
-  color: white
+  color: white;
 }
 .modelos-iphone{
   display: flex;
@@ -352,13 +332,15 @@ h1{
   margin: 25px 25px 25px 25px;
   letter-spacing: 2px;
   font-size: large;
+  color: black;
 }
 .corpo-sobrenos p{
 margin-top: 50px;
+color: black;
 }
 
 .corpo-sobrenos img{
-  height: 520px;
+max-height: 80%;
 }
 /*fecha sobre nos*/
 
@@ -381,6 +363,8 @@ margin-top: 50px;
   grid-auto-rows: 420px 420px;
   grid-template-columns: repeat(4, 300px);
   grid-gap: 20px;
+
+  
 }
 
 
@@ -391,6 +375,7 @@ margin-top: 50px;
 }
 
 .produto{
+  color: black;
   background-color: white;
   padding:2%;
 }
@@ -403,16 +388,21 @@ background-color: black;
 max-height: 100%;
 width: 100%;
 color: white;
+margin-top: 2%;
 }
+
 
 .primeira-parte-footer{
   display: flex;
   align-items: center;
- justify-content: space-between;
+ justify-content: space-around;
  margin: 0px 12% 0px 12%;
  padding: 3%;
+ color: white;
+ 
 
 }
+
 
 .primeira-parte-footer img{
   height: 25%;
@@ -440,4 +430,34 @@ color: white;
 /*fecha rodape*/
 
 
+
+@media only screen and (max-device-width: 750px) {
+
+.topo-site{
+flex-direction: column;
+}
+.logo{
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul{
+  display:list-item;
+ font-size: 150%;
+ z-index:1;
+ margin-top: 3%;
+ border-left: 2px white solid;
+}
+
+header nav ul li{
+  margin: auto;
+}
+.sub-menu-1{
+  display: none;
+}
+.content{
+  display: none;
+}
+
+}
 
