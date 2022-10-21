@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2? family= Anek+Telugu:wght@300 & display=swap');
 
 /*header*/
+
 body {
-  background-color: lightgray;
+  background-color: white;
 	margin: 0;
   padding: 0;
   height: 100vh;
@@ -17,37 +18,41 @@ a{
 .topo-site {
 background-color: black;
 display: flex;
-height: 13%;
+height: 15%;
+width: 100%;
 }
 
 .logo img{
-	width: 50%;
+	width: 150px;
   padding: 50px;
+  margin-top: 15px;
+  margin-left: 150px;
 }
 
- 
-
-  .iconelogin img{
-width: 25px;
-position: absolute;
-height: 25px;
-left: 90%;
-top: 60px;
+  .icones-header img{
+    width: 28px;
+    height: 28px;
+    margin-left: 25px;
   }
  
-
-  .iconecarrinho img{
-    width: 28px;
-position: absolute;
-height: 28px;
-left:95%;
-top: 60px;
+  .icones-header{
+    display: flex;
+  margin-top: 65px;
+  margin-left: 200px;
+    
   }
 
     /*Barra de Pesquisa*/
 header nav{
   background-color: black;
   text-align: center;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 10px;
+
+  
+  
 }
 header nav ul{
   display: inline-flex;
@@ -107,21 +112,19 @@ transition: 0,7s;
   /*Corpo index*/
 .content{
   background-color: white;
-  height: 50%;
+  height: 480px;
   width: 100%;
   overflow: hidden;
-  position: absolute;
-  top: 40%;
-  left: 50%;
+  margin-left: 950px;
+  margin-top: 240px;
   transform:  translate(-50%, -50%);
   z-index: 1;
-  
 
 }
-
 .carrossel-iphone{
-height: 570px;
+  height: 300px;
 }
+
 
 
 .navegation{
@@ -194,7 +197,6 @@ margin-left: -80%;
 .inf{
   color:black ;
   display: flex;
-  margin-top: 2%;
   margin-right: 7%;
   margin-left: 7%;
   padding: 20px;
@@ -269,8 +271,8 @@ h1{
 }
 
 .navegacao-iphone img{
-  height: 200px;
-  width: 200px;
+  height: 170px;
+  width: 180px;
 }
 .navegacao-iphone h5{
   margin-top: 0;
@@ -332,15 +334,27 @@ h1{
   margin: 25px 25px 25px 25px;
   letter-spacing: 2px;
   font-size: large;
+  display:flex;
+ 
+}
+.h1-sobrenos{
+  display: flex;
+  justify-content: center;
+}
+.h1-sobrenos h1{
   color: black;
+  font-size: 75px;
 }
 .corpo-sobrenos p{
-margin-top: 50px;
 color: black;
+max-width: 100%;
+margin-left: 25px;
+font-size: 25px;
 }
 
 .corpo-sobrenos img{
-max-height: 80%;
+height:550px;
+width: 70%;
 }
 /*fecha sobre nos*/
 
@@ -357,7 +371,7 @@ max-height: 80%;
   display: grid;
   justify-content: center;
   place-items: center;
-  width: 100%;
+  max-width: 100%;
  
   margin: 2%;
   grid-auto-rows: 420px 420px;
@@ -434,19 +448,41 @@ margin-top: 2%;
 @media only screen and (max-device-width: 750px) {
 
 .topo-site{
-flex-direction: column;
+flex-direction: column; 
+max-width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 600px;
+
 }
+
+header nav{
+display: flex;
+flex-direction: column-reverse;
+}
+.iconecarrinho{
+  margin-left: 25px;
+}
+
 .logo{
   justify-content: center;
   align-items: center;
+  
+}
+.icones-header{
+  margin-left: 40px;
+  margin-bottom: 19px;
+}
+.logo img{
+  width: 230px;
+  margin-left: 25px;
 }
 
 header nav ul{
   display:list-item;
  font-size: 150%;
- z-index:1;
  margin-top: 3%;
- border-left: 2px white solid;
 }
 
 header nav ul li{
