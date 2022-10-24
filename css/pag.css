@@ -42,6 +42,27 @@ width: 100%;
     
   }
 
+  .icones-header:hover .sub-menu-1{
+    display: block;
+    background-color: black;
+    margin-top: 35px;
+    margin-left: -100px;
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  .icones-header:hover .sub-menu-1 ul li{
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0,7s;
+    text-decoration: none;
+    color: red;
+      }
+
+      .icones-header:hover .sub-menu-1 ul li:hover{
+        background-color: gray;
+      }
     /*Barra de Pesquisa*/
 header nav{
   background-color: black;
@@ -292,7 +313,7 @@ h1{
 .imagens-corpo-iphone {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 25px;
 }
 
 .imagens-corpo-iphone img{
